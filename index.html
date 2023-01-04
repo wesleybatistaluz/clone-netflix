@@ -1,0 +1,258 @@
+<html>
+  <head>
+    <title>
+      NETFLIX CLONE
+    </title>
+    <style>
+      * {
+      box-sizing: border-box;
+      }
+      #header{
+        background: black;
+        color: white;
+        overflow: auto;
+        padding-left: 25px;
+        padding-right: 25px;
+      }
+      #header a{
+        text-decoration: none;
+        font-family: helvetica;
+      }
+      #header a:hover{
+        
+      }
+      .logo{
+        float: left;
+        display: inline-block;
+        padding: 20px;
+        margin-right: 25px;
+        font-family: impact;
+        font-size: 50;
+        color: red;
+      }
+      .leftMenu{
+        float: left;
+        display: inline-block;
+      }
+      .leftMenu ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .leftMenu ul li{
+        display: inline-block;
+        padding: 20px;
+      }
+       .leftMenu ul li a{
+        color: white;
+      }
+      .leftMenu ul li a.dropdown{
+        color: red;
+      }
+      .rightMenu{
+        float: right;
+        display: inline-block;
+        color: black;
+      }
+       .rightMenu ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .rightMenu ul li{
+        display: inline-block;
+        padding: 20px;
+      }
+      .rightMenu ul li a{
+        color: white;
+      }
+      .leftMenu ul li a:hover, .rightMenu ul li a:hover{
+        color: red ;
+      }
+      #largeImage{
+        padding: 200px 25px;
+        background:-webkit-linear-gradient(45deg, rgba(231,31, 17, .001)1%,#000000 100%), url(https://images3.alphacoders.com/814/814923.jpg);
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+           -o-background-size: cover;
+           background-size: cover;
+      }
+      .description-box{
+        width: 50%;
+      }
+      .description-box h1{
+        font-family: impact;
+        font-weight: 700;
+        font-size: 100px;
+        margin: 0;
+      }
+      .description-box h3{
+        font-family: helvetica;
+        font-size: 30px;
+        font-weight: 600;
+        margin: 0;
+      }
+      .description-box h4{
+        font-family: impact;
+        font-weight: 700;
+        margin: 0px;
+        font-size: 25px;
+        color:red;
+      }
+      .description-box p{
+        margin: 25px 0 0 0 ;
+        font-family: helvetica;
+        font-weight: 100;
+      }
+      .button1{
+        display: inline-block;
+        padding: 12px 20px;
+        background: red;
+        color: #fff;
+        cursor: pointer;
+        font-family: impact;
+        font-size: 18;
+      }
+      .button2{
+        display: inline-block;
+        padding: 10px 18px;
+        background: 2px solid #000;
+        color: #fff;
+        cursor: pointer;
+        font-family: impact;
+        font-size: 18;
+      }
+      .button1:hover, .button2:hover{
+        background: rgba(0,0,0,.6);
+      }
+      #videoSection{
+        width:100%;
+        background: black;
+      }
+      .row{
+        font-size: 0;
+        width: 100%;
+      }
+      .videoBoxes{
+        display: inline-block;
+        background: red;
+        width: 200px;
+        height: 300px;
+        font-size: 16px;
+        margin: 0%;
+        padding: 15px;
+      }
+      .videoBoxes h4{
+        margin: 0;
+        color: white;
+      }
+      .video1{
+        background: url(http://blogdesuperheroes.es/wp-content/plugins/BdSGallery/BdSGaleria/54338_big.jpg);
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+           -o-background-size: cover;
+           background-size: cover;
+      }
+      .video2{
+        background: url(https://vignette3.wikia.nocookie.net/marvelmovies/images/0/04/Iron_Man_artposter.jpg/revision/latest?cb=20140203181914);
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+           -o-background-size: cover;
+           background-size: cover;
+      }
+      .video3{
+        background: url(https://i.pinimg.com/736x/6b/48/0b/6b480b7a19231701399f87f9065a7f23--andrew-garfield-emma-stone.jpg);
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+           -o-background-size: cover;
+           background-size: cover;
+      }
+      .video4{
+        background: url(http://vignette2.wikia.nocookie.net/marveldatabase/images/c/ce/Doctor_Strange_%28film%29_poster_002.jpg/revision/latest?cb=20160413042340);
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+           -o-background-size: cover;
+           background-size: cover;
+      }
+      .video5{
+        background: url(https://pbs.twimg.com/media/DFYle5OUQAAqvj2.jpg:large);
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+           -o-background-size: cover;
+           background-size: cover;
+      }
+      .video6{
+        background: url(http://www.imgderp.com/wp-content/uploads/sites/41/2014/12/captain-america-movie-poster.jpg);
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+           -o-background-size: cover;
+           background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <!--declaring sections with div id= -->
+    <div id="Header">
+      <div class = 'logo'>NETFLIX</div>
+      <div class = 'leftMenu'>
+        <ul>
+            <li>
+              <a href = "kids.html" class = "dropdown">Browse</a>
+            </li>
+            <li>
+              <a href = "kids.html">Kids</a>
+            </li>
+            <li>
+              <a href = "kids.html">DVD</a>
+            </li>
+        </ul>
+      </div>
+      <div class = 'rightMenu'>
+        <ul>
+            <li>
+              <a href = "kids.html">Search</a>
+            </li>
+            <li>
+              <a href = "kids.html">Bell</a>
+            </li>
+            <li>
+              <a href = "kids.html">Username</a>
+            </li>
+        </ul>
+      </div>
+    </div>
+    <!--declaring largeImage section of NF with div id= -->
+    <div id="largeImage">
+      <div class="description-box">
+        <h4>Marvel Presents</h4>
+      <h1>LOGAN </h1>
+      <h3>Now Playing</h3>
+      <p>In the near future, a weary Logan (Hugh Jackman) cares for an ailing Professor X (Patrick Stewart) at a remote outpost on the Mexican border. His plan to hide from the outside world gets upended when he meets a young mutant (Dafne Keen) who is very much like him. Logan must now protect the girl and battle the dark forces that want to capture her.</p>
+      <div class = "button1">Play Now</div>
+      <div class = "button2">+My List</div>
+      </div>
+    </div>
+    <div id="videoSection">
+      <div class='row'>
+        <div class = 'videoBoxes video1'>
+          <h4>Thor Ragnorak</h4>
+        </div>
+        <div class = 'videoBoxes video2'>
+          <h4>Iron Man</h4>
+        </div>
+        <div class = 'videoBoxes video3'>
+          <h4>Spiderman</h4>
+        </div>
+        <div class = 'videoBoxes video4'>
+          <h4>Dr.Strange</h4>
+        </div>
+        <div class = 'videoBoxes video5'>
+          <h4>Black Panther</h4>
+        </div>
+        <div class = 'videoBoxes video6'>
+          <h4>Captain America</h4>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
